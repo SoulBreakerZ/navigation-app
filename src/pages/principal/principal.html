@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Pagina principal</ion-title>
+    <ion-buttons>
+      <button ion-button icon-only (click)="mostrarMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button block color="primary" (click)="navegarPagina()" >Ir a la pagina2 (Evento)</button>
+  <button ion-button block color="secondary" [navPush]="pagina2" >Ir a la pagina2 (HMTL)</button>
+</ion-content>
